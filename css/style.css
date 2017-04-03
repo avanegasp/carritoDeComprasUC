@@ -1,0 +1,59 @@
+h1{
+	color: white;
+
+}
+
+
+.row1 .cara1{
+	height: 411px;
+	line-height: 20px;
+	vertical-align: middle;
+	max-width: 100%;
+}
+
+.row1 .cara2{
+	height: 411px;
+	line-height: 20px;
+	vertical-align: middle;
+	max-width: 100%;
+}
+
+.row1 .cara3{
+	height: 411px;
+	line-height: 20px;
+	vertical-align: middle;
+	max-width: 100%;
+}
+
+.row2 .cara4{
+	height: 411px;
+	line-height: 20px;
+	vertical-align: middle;
+	max-width: 100%;
+}
+
+.row2 .cara5{
+	height: 411px;
+	line-height: 20px;
+	vertical-align: middle;
+	max-width: 100%;
+}
+
+.row2 .cara6{
+	height: 411px;
+	line-height: 20px;
+	vertical-align: middle;
+	max-width: 100%;
+}
+
+.modal-body p{
+	padding: 10px 5px;
+}
+
+#fav {
+	color: blue;
+}
+footer{
+	margin-right: 50px;
+	text-align: right;
+}

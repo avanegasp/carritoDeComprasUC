@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Carrito de Compras</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/app.js">
+
+	</script>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<h1> CARA DELEVIGNE</h1>
+				<div class="visible-lg visible-md visible-sm">
+					<p class="navbar-text navbar-right"><a href="#" class="navbar-link">Salir</a></p>
+					<p class="navbar-text navbar-right"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span><a href="#" class="navbar-link">Compras</a></p>
+				</div>
+
+				<div class="visible-xs">
+					<div class="dropdown">
+						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							<li><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span><a href="#" class="navbar-link">Compras</a></li>
+							<li><a href="#" class="navbar-link">Salir</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<!--list-->
+
+	<div class="container">
+		<div class="col-md-3">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Busqueda" aria-describedby="basic-addon2">
+				<span class="input-group-addon" id="basic-addon2"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
+			</div>
+			<br>
+			<div class="visible-lg visible-md">
+				<h4><strong>Categorías</strong></h4>
+				<ul class="list-group">
+					<a href="#" li class="list-group-item active">
+						<span class="badge">69</span>
+						Todas </a>
+					</li>
+					<a href="#" li class="list-group-item">
+						<span class="badge">8</span>
+						Abrigos </a>
+					</li>
+					<a href="#" li class="list-group-item">
+						<span class="badge">15</span>
+						Vestidos </a>
+					</li>
+					<a href="#" li class="list-group-item">
+						<span class="badge">11</span>
+						Chaquetas </a>
+					</li>
+					<a href="#" li class="list-group-item">
+						<span class="badge">3</span>
+						Overoles </a>
+					</li>
+					<a href="#" li class="list-group-item">
+						<span class="badge">10</span>
+						Gorras </a>
+					</li>
+					<a href="#" li class="list-group-item">
+						<span class="badge">22</span>
+						Bolsos </a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--final List-->
+
+		<!--carousel-->
+		<div class="col-md-9">
+			<div id="carousel" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
+
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="images/caramng14.jpg" class="img-responsive" alt="Cara-Glasses">
+						<div class="carousel-caption hidden-xs hidden-sm">
+							<h3>Chanel - Karl Lagerfeld</h3>
+						</div>
+					</div>
+
+					<div class="item">
+						<img src="images/caramng15.jpg" class="img-responsive" alt="Cara-Glasses">
+						<div class="carousel-caption hidden-xs hidden-sm">
+							<h3>Chanel - Karl Lagerfeld</h3>
+						</div>
+					</div>
+
+					<div class="item">
+						<img src="images/caramng8.jpg" class="img-responsive" alt="Cara-Glasses">
+						<div class="carousel-caption hidden-xs hidden-sm">
+							<h3>Chanel - Karl Lagerfeld</h3>
+						</div>
+					</div>
+				</div>
+
+				<a class="left carousel-control" href="#carousel" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a class="right carousel-control" href="#carousel" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
+			<!--final carousel-->
+			<br>
+
+			<!--clothing-->
+
+			<div class="row1">
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="thumbnail">
+						<a id="imgG0" href="images/caa.jpg">
+							<img class="cara4" src="images/caa.jpg" alt="Cara-Overalls">
+						</a>
+						<div class="etiquetas">
+							<b>
+								<span id="pro0">Abrigos</span>
+								<span id="pre0">$270</span>
+							</b>
+						</div>
+						<div class="stock">
+								"hay en stock"
+								<span id="uni0">8</span>
+								"unidades"
+								<br>
+								"cuantas quiere"
+								<input class="uniBien" type="number" id="uniUser" name="" value="0" size="4">
+						</div>
+			<!-- <div class="caption">
+							<h3>Abrigos</h3>
+							<p>Ideal para una cena</p>
+							<p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>Precio</a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
+						</div> -->
+					</div>
+				</div>
+
+
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="thumbnail">
+						<a id="imgG1" href="images/cama.jpg">
+							<img class="cara4" src="images/cama.jpg" alt="Cara-Overalls">
+						</a>
+						<div class="etiquetas">
+							<b>
+								<span id="pro1">Vestidos</span>
+								<span id="pre1">$220</span>
+							</b>
+						</div>
+						<div class="stock">
+								"hay en stock"
+								<span id="uni1">15</span>
+								"unidades"
+								<br>
+								"cuantas quiere"
+								<input class="uniBien" type="number" id="uniUser" name="" value="0" size="4">
+						</div>
+			<!--	<div class="caption">
+								<h3>Vestidos</h3>
+								<p>Ideal para cualquier ocasión</p>
+								<p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>Precio</a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
+						</div> -->
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="thumbnail">
+						<a id="imgG2" href="images/cach.jpg">
+							<img class="cara4" src="images/cach.jpg" alt="Cara-Overalls">
+						</a>
+						<div class="etiquetas">
+							<b>
+								<span id="pro2">Chaquetas</span>
+								<span id="pre2">$120</span>
+							</b>
+						</div>
+						<div class="stock">
+								"hay en stock"
+								<span id="uni2">11</span>
+								"unidades"
+							<br>
+								"cuantas quiere"
+								<input class="uniBien" type="number" id="uniUser" name="" value="0" size="4">
+						</div>
+			<!-- <div class="caption">
+								<h3>Chaquetas</h3>
+								<p>Ideal para una mañana</p>
+								<p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>Precio</a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
+						</div> -->
+					</div>
+				</div>
+			</div>
+
+		<br>
+
+		<div class="row2">
+			<div class="col-md-4 col-sm-4 col-xs-6">
+				<div class="thumbnail">
+					<a id="imgG3" href="images/cao.jpg">
+						<img class="cara4" src="images/cao.jpg" alt="Cara-Overalls">
+					</a>
+					<div class="etiquetas">
+						<b>
+							<span id="pro3">Overoles</span>
+							<span id="pre3">$70</span>
+						</b>
+					</div>
+					<div class="stock">
+							"hay en stock"
+							<span id="uni3">3</span>
+							"unidades"
+							<br>
+							"cuantas quiere"
+							<input class="uniBien" type="number" id="uniUser" name="" value="0" size="4">
+					</div>
+		<!-- <div class="caption">
+						<h3>Overoles</h3>
+						<p>Ideal para una mañana</p>
+						<p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>Precio</a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
+					</div> -->
+				</div>
+			</div>
+
+
+			<div class="col-md-4 col-sm-4 col-xs-6">
+				<div class="thumbnail">
+					<a id="imgG0" href="images/cag.jpg">
+						<img class="cara4" src="images/cag.jpg" alt="Cara-Overalls">
+					</a>
+					<div class="etiquetas">
+						<b>
+							<span id="pro4">Gorras</span>
+							<span id="pre4">$20</span>
+						</b>
+					</div>
+					<div class="stock">
+							"hay en stock"
+							<span id="uni4">10</span>
+							"unidades"
+							<br>
+							"cuantas quiere"
+							<input class="uniBien" type="number" id="uniUser" name="" value="0" size="4">
+					</div>
+		<!-- <div class="caption">
+							<h3>Gorras</h3>
+							<p>Ideal para una mañana</p>
+							<p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>Precio</a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
+					</div> -->
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-4 col-xs-6">
+				<div class="thumbnail">
+					<a id="imgG5" href="images/cave.jpg">
+						<img class="cara4" src="images/cave.jpg" alt="Cara-Overalls">
+					</a>
+					<div class="etiquetas">
+						<b>
+							<span id="pro5">Bolsos</span>
+							<span id="pre5">$200</span>
+						</b>
+					</div>
+					<div class="stock">
+							"hay en stock"
+							<span id="uni5">22</span>
+							"unidades"
+						<br>
+							"cuantas quiere"
+							<input class="uniBien" type="number" id="uniUser" name="" value="0" size="4">
+					</div>
+		 <!-- <div class="caption">
+							<h3>Bolsos</h3>
+							<p>Ideal para una mañana</p>
+							<p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>Precio</a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
+					</div> -->
+				</div>
+			</div>
+		</div>
+
+		<!--final clothing-->
+
+	<!--pop-up window-->
+
+	<div class="modal fade" id="window1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- Window Header-->
+				<div class="modal-header">
+					<button tyle="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title"><strong>ABRIGO</strong></h4>
+				</div>
+
+				<!-- Window Body-->
+				<div class="modal-body">
+					<p class="bg-info"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Este producto esta agotado </p>
+
+					<div class="col-md-6">
+						<img src="images/caramn2.jpg" class="img-responsive" alt="Cara-Coat">
+					</div>
+
+					<div class="col-md-6">
+						<p> Precio: $110 </p>
+						<p> Calificación: <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></p>
+						<span class="label label-default">Casual</span>
+						<span class="label label-success">Social</span>
+
+						<div id="fav">
+							<p><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>Agregar a mis favoritos</p>
+						</div>
+					</div>
+
+					<br>
+
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="tablist" class=""><a href="#"></a> <ul class="nav nav-tabs" role="tablist">
+							<li role="presentation" class=""><a href="#Descripción" aria-controls="Descripción" role="tab" data-toggle="tab">Descripción</a></li>
+							<li role="presentation"><a href="#Ventas" aria-controls="Ventas" role="tab" data-toggle="tab">Ventas</a></li>
+							<li role="presentation"><a href="#Ciudades" aria-controls="Ciudades" role="tab" data-toggle="tab">Ciudades</a></li>
+							<li role="presentation"><a href="#Colores" aria-controls="Colores" role="tab" data-toggle="tab">Colores</a></li></ul>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="Descripción"> <p>Prenda de vestir que baja por debajo de las caderas y se   abrocha al frente con botones y a veces también con cinturón. Se lleva además de las otras prendas de vestir para asegurarse de las inclemencias.
+
+							El abrigo se abre sobre el frente, tiene las mangas largas, y lleva a veces bolsillos e incluso, capucha. Los materiales de fabricación son variados. Pueden llevarlo tanto mujeres como hombres, aunque los cortes de abrigos de mujeres sean diferentes de los de hombres (más ajustados, más estrechos, etc.) así como los materiales (la piel suele estar reservada a las mujeres). </p>
+						</div>
+						<br>
+						<div role="tabpanel" class="tab-pane" id="Ventas">
+							<ul>
+								<li>Centro Comercial Andino</li>
+								<li>Centro Comercial Santafe</li>
+								<li>Centro Comercial Santa Barbara</li>
+							</ul>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="Ciudades">
+							Puedes conseguir este abrigo en todas las ciudades del país.
+						</div>
+
+						<div role="tabpanel" class="tab-pane" id="Colores">
+							<ul>
+								<li>Negro</li>
+								<li>Blanco</li>
+								<li>Café</li>
+								<li>Morado</li>
+							</ul>
+						</div>
+
+						<br>
+
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-md-12">
+									<form class="form-horizontal">
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="ingresa tu comentario"></input>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!---Footer-->
+					<footer>
+						<p><a href="#" class="btn btn-primary" role="button" data-dismiss="modal">Cerrar</a> <a href="#" class="btn btn-default" role="button"><span class="glyphicon glyphicon-shopping-cart">Comprar</a>
+						</p>
+					</footer>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Footer-->
+</body>
+</html>
