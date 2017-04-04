@@ -300,6 +300,82 @@
 
 		<!--final clothing-->
 
+		<!-- Botones carrito de compras -->
+		<div id="todo" class="todoNo">
+			<div id="menu" class="menuNo">
+
+		<div id="divBotones">
+			<input type="button" id="botonTotal" name="" value="Calcular Total">
+			<input type="button" id="botonDatos" name="" value="Datos Personales" disabled="disabled">
+			<input type="button" id="botonPago" name="" value="Pago" disabled="disabled">
+			<input type="button" id="botonConfirmar" name="" value="Confirmar Pedido" disabled="disabled">
+		</div>
+
+		<!-- zona de compras, tablas, formularios, etc,.-->
+		<div id="divZonaCompra" class="divZonaCompraNo">
+
+		<!-- carrito de compra -->
+				<div id="divTotal" class="divsNo">
+					<p><b>Carrito de compra, si quiere hacer alguna modificación aún esta a tiempo:</b></p>
+					<table id="tablaTotal"></table>
+				</div>
+
+		<!-- datos personales -->
+			<div id="divDatos" class="divsNo">
+				<p><b>Introduzca datos personales:</b></p>
+
+					<div id="divDatosPersonales0">
+						<div id="divDatosPersonales1">
+							<label>Nombre Completo:</label><br>
+							<input type="text" id="nombre" name="" value="" size="26">
+
+							<label>Cédula</label>
+							<input type="text" id="dni" size="8" maxlength="9" name="" value="">
+						</div>
+					</div>
+			</div>
+
+			<!-- datos de pago -->
+			<div id="divPago" class="divsNo">
+				<p><b>Introduzca los datos de las tarjetas de crédito/débito donde se cargará el cobro:</b></p>
+
+					<label>Titular de la tarjeta</label><br>
+					<input type="text" id="Titulat" name="" size="26" value="">
+
+					<div id="metodosDePago">
+						<label><span id="alertTipoDeTarjeta">Tipo de tarjeta</span></label><br>
+						<label for="visa">
+						<input type="radio" id="visa" name="tarjetas" class="logoTarjetas" value="Visa">
+						<img src="" width="10px" height="10px" alt="">
+						</label>
+
+						<label for="mastercard">
+							<input type="radio" id="masterCard" name="tarjetas" class="logoTarjetas" value="MasterCard">
+							<img src="" alt="">
+						</label>
+					</div>
+
+					<div id="divNumeroTarjeta">
+					<label>Número tarjeta y CVC:</label><br/>
+					<input type="text" id="numeroTarjeta" value="" size="15" maxlength="16" />
+					<input type="text" id="cvcTarjeta" value="" size="2" maxlength="3" /><br/>
+
+
+					<select id="mesTarjeta">
+						<option value="">  mes </option>
+					</select>
+
+					<select id="anioTarjeta">
+						<option value="">  año </option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+
+
 	<!--pop-up window-->
 
 	<div class="modal fade" id="window1">
