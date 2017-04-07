@@ -1,471 +1,256 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Carrito de Compras</title>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="js/app.js">
+	<head>
+		<title>Formulario con JavaScript</title>
 
-	</script>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
-</head>
+		<!--lee codigo javascript-->
+		<script type="text/javascript" src="js/app.js"></script>
 
-<body>
-	<header>
-		<nav class="navbar navbar-inverse">
-			<div class="container-fluid">
-				<h1> CARA DELEVIGNE</h1>
-				<div class="visible-lg visible-md visible-sm">
-					<p class="navbar-text navbar-right"><a href="#" class="navbar-link">Salir</a></p>
-					<p class="navbar-text navbar-right"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span><a href="#" class="navbar-link">Compras</a></p>
-				</div>
-
-				<div class="visible-xs">
-					<div class="dropdown">
-						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-							<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-						</button>
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-							<li><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span><a href="#" class="navbar-link">Compras</a></li>
-							<li><a href="#" class="navbar-link">Salir</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</nav>
-	</header>
-
-	<!--list-->
-
-	<div class="container">
-		<div class="col-md-3">
-			<div class="input-group">
-				<input type="text" class="form-control" placeholder="Busqueda" aria-describedby="basic-addon2">
-				<span class="input-group-addon" id="basic-addon2"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
-			</div>
-			<br>
-			<div class="visible-lg visible-md">
-				<h4><strong>Categorías</strong></h4>
-				<ul class="list-group">
-					<a href="#" li class="list-group-item active">
-						<span class="badge">69</span>
-						Todas </a>
-					</li>
-					<a href="#" li class="list-group-item">
-						<span class="badge">8</span>
-						Abrigos </a>
-					</li>
-					<a href="#" li class="list-group-item">
-						<span class="badge">15</span>
-						Vestidos </a>
-					</li>
-					<a href="#" li class="list-group-item">
-						<span class="badge">11</span>
-						Chaquetas </a>
-					</li>
-					<a href="#" li class="list-group-item">
-						<span class="badge">3</span>
-						Overoles </a>
-					</li>
-					<a href="#" li class="list-group-item">
-						<span class="badge">10</span>
-						Gorras </a>
-					</li>
-					<a href="#" li class="list-group-item">
-						<span class="badge">22</span>
-						Bolsos </a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<!--final List-->
-
-		<!--carousel-->
-		<div class="col-md-9">
-			<div id="carousel" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-				</ol>
-
-				<div class="carousel-inner" role="listbox">
-					<div class="item active">
-						<img src="images/caramng14.jpg" class="img-responsive" alt="Cara-Glasses">
-						<div class="carousel-caption hidden-xs hidden-sm">
-							<h3>Chanel - Karl Lagerfeld</h3>
-						</div>
-					</div>
-
-					<div class="item">
-						<img src="images/caramng15.jpg" class="img-responsive" alt="Cara-Glasses">
-						<div class="carousel-caption hidden-xs hidden-sm">
-							<h3>Chanel - Karl Lagerfeld</h3>
-						</div>
-					</div>
-
-					<div class="item">
-						<img src="images/caramng8.jpg" class="img-responsive" alt="Cara-Glasses">
-						<div class="carousel-caption hidden-xs hidden-sm">
-							<h3>Chanel - Karl Lagerfeld</h3>
-						</div>
-					</div>
-				</div>
-
-				<a class="left carousel-control" href="#carousel" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left"></span>
-				</a>
-				<a class="right carousel-control" href="#carousel" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right"></span>
-				</a>
-			</div>
-			<!--final carousel-->
-			<br>
-
-			<!--clothing-->
-
-			<div class="row1" >
-				<div class="col-md-4 col-sm-4 col-xs-6">
-					<div class="thumbnail">
-						<a id="imgG0" href="images/caa.jpg">
-							<img class="cara1" src="images/caa.jpg" alt="Cara-Overalls">
-						</a>
-						<div class="etiquetas">
-							<b>
-								<span id="pro0">Abrigos</span>
-								<span id="pre0">$270</span>
-							</b>
-						</div>
-						<div class="stock">
-								"hay en stock"
-								<span id="uni0">8</span>
-								"unidades"
-								<br>
-								"cuantas quiere"
-								<input class="uniBien" type="number" id="uniUser" name="" value="0" size="4">
-						</div>
-			<!-- <div class="caption">
-							<h3>Abrigos</h3>
-							<p>Ideal para una cena</p>
-							<p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>Precio</a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
-						</div> -->
-					</div>
-				</div>
+		<!--lee codigo css-->
+		<link type="text/css" href="css/style.css" rel="stylesheet" media="screen"/>
+	</head>
 
 
-				<div class="col-md-4 col-sm-4 col-xs-6">
-					<div class="thumbnail">
-						<a id="imgG1" href="images/cama.jpg">
-							<img class="cara2" src="images/cama.jpg" alt="Cara-Overalls">
-						</a>
-						<div class="etiquetas">
-							<b>
-								<span id="pro1">Vestidos</span>
-								<span id="pre1">$220</span>
-							</b>
-						</div>
-						<div class="stock">
-								"hay en stock"
-								<span id="uni1">15</span>
-								"unidades"
-								<br>
-								"cuantas quiere"
-								<input class="uniBien" type="number" id="uniUser" name="" value="0" size="4">
-						</div>
-			<!--	<div class="caption">
-								<h3>Vestidos</h3>
-								<p>Ideal para cualquier ocasión</p>
-								<p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>Precio</a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
-						</div> -->
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-4 col-xs-6">
-					<div class="thumbnail">
-						<a id="imgG2" href="images/cach.jpg">
-							<img class="cara3" src="images/cach.jpg" alt="Cara-Overalls">
-						</a>
-						<div class="etiquetas">
-							<b>
-								<span id="pro2">Chaquetas</span>
-								<span id="pre2">$120</span>
-							</b>
-						</div>
-						<div class="stock">
-								"hay en stock"
-								<span id="uni2">11</span>
-								"unidades"
-							<br>
-								"cuantas quiere"
-								<input class="uniBien" type="number" id="uniUser" name="" value="0" size="4">
-						</div>
-			<!-- <div class="caption">
-								<h3>Chaquetas</h3>
-								<p>Ideal para una mañana</p>
-								<p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>Precio</a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
-						</div> -->
-					</div>
-				</div>
-			</div>
-
-		<br>
-
-		<div class="row2">
-			<div class="col-md-4 col-sm-4 col-xs-6">
-				<div class="thumbnail">
-					<a id="imgG3" href="images/cao.jpg">
-						<img class="cara4" src="images/cao.jpg" alt="Cara-Overalls">
-					</a>
-					<div class="etiquetas">
-						<b>
-							<span id="pro3">Overoles</span>
-							<span id="pre3">$70</span>
-						</b>
-					</div>
-					<div class="stock">
-							"hay en stock"
-							<span id="uni3">3</span>
-							"unidades"
-							<br>
-							"cuantas quiere"
-							<input class="uniBien" type="number" id="uniUser" name="" value="0" size="4">
-					</div>
-		<!-- <div class="caption">
-						<h3>Overoles</h3>
-						<p>Ideal para una mañana</p>
-						<p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>Precio</a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
-					</div> -->
-				</div>
-			</div>
-
-
-			<div class="col-md-4 col-sm-4 col-xs-6">
-				<div class="thumbnail">
-					<a id="imgG0" href="images/cag.jpg">
-						<img class="cara5" src="images/cag.jpg" alt="Cara-Overalls">
-					</a>
-					<div class="etiquetas">
-						<b>
-							<span id="pro4">Gorras</span>
-							<span id="pre4">$20</span>
-						</b>
-					</div>
-					<div class="stock">
-							"hay en stock"
-							<span id="uni4">10</span>
-							"unidades"
-							<br>
-							"cuantas quiere"
-							<input class="uniBien" type="number" id="uniUser" name="" value="0" size="4">
-					</div>
-		<!-- <div class="caption">
-							<h3>Gorras</h3>
-							<p>Ideal para una mañana</p>
-							<p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>Precio</a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
-					</div> -->
-				</div>
-			</div>
-
-			<div class="col-md-4 col-sm-4 col-xs-6">
-				<div class="thumbnail">
-					<a id="imgG5" href="images/cave.jpg">
-						<img class="cara6" src="images/cave.jpg" alt="Cara-Overalls">
-					</a>
-					<div class="etiquetas">
-						<b>
-							<span id="pro5">Bolsos</span>
-							<span id="pre5">$200</span>
-						</b>
-					</div>
-					<div class="stock">
-							"hay en stock"
-							<span id="uni5">22</span>
-							"unidades"
-						<br>
-							"cuantas quiere"
-							<input class="uniBien" type="number" id="uniUser" name="" value="0" size="4">
-					</div>
-		 <!-- <div class="caption">
-							<h3>Bolsos</h3>
-							<p>Ideal para una mañana</p>
-							<p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>Precio</a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
-					</div> -->
-				</div>
-			</div>
-		</div>
-
-		<!--final clothing-->
-
-		<!-- Botones carrito de compras -->
+	<body>
 		<div id="todo" class="todoNo">
 			<div id="menu" class="menuNo">
 
-		<div id="divBotones">
-			<input type="button" id="botonTotal" name="" value="Calcular Total">
-			<input type="button" id="botonDatos" name="" value="Datos Personales" disabled="disabled">
-			<input type="button" id="botonPago" name="" value="Pago" disabled="disabled">
-			<input type="button" id="botonConfirmar" name="" value="Confirmar Pedido" disabled="disabled">
-		</div>
 
-		<!-- zona de compras, tablas, formularios, etc,.-->
-		<div id="divZonaCompra" class="divZonaCompraNo">
+				<!--Producto del 1 al 9-->
+				<div id="div1" name="DIVS"></div>
+				<div id="div2" name="DIVS"></div>
+				<div id="div3" name="DIVS"></div>
+				<div id="div4" name="DIVS"></div>
+				<div id="div5" name="DIVS"></div>
+				<div id="div6" name="DIVS"></div>
+				<div id="div7" name="DIVS"></div>
+				<div id="div8" name="DIVS"></div>
+				<div id="div9" name="DIVS"></div>
 
-		<!-- carrito de compra -->
-				<div id="divTotal" class="divsNo">
-					<p><b>Carrito de compra, si quiere hacer alguna modificación aún esta a tiempo:</b></p>
-					<table id="tablaTotal"></table>
-				</div>
 
-		<!-- datos personales -->
-			<div id="divDatos" class="divsNo">
-				<p><b>Introduzca datos personales:</b></p>
+				<!--Botones de compra-->
+				<div id="divbotones">
+					<input type="button" id="botonTotal" value="Calcular total"/>
+					<input type="button" id="botonDatos" value="Datos personales" disabled="disabled"/>
+<!--					<input type="button" id="botonPago" value="Pago" disabled="disabled"/>
+					<input type="button" id="botonConfirmar" value="Confirmar pedido" disabled="disabled"/>
+-->
+				 </div>
 
-					<div id="divDatosPersonales0">
-						<div id="divDatosPersonales1">
-							<label>Nombre Completo:</label><br>
-							<input type="text" id="nombre" name="" value="" size="26">
 
-							<label>Cédula</label>
-							<input type="text" id="dni" size="8" maxlength="9" name="" value="">
-						</div>
-					</div>
-			</div>
+				<!--zona de compra, tablas, formularios, etc.-->
+				<div id="divZonaCompra" class="divZonaCompraNo">
 
-			<!-- datos de pago -->
-			<div id="divPago" class="divsNo">
-				<p><b>Introduzca los datos de las tarjetas de crédito/débito donde se cargará el cobro:</b></p>
 
-					<label>Titular de la tarjeta</label><br>
-					<input type="text" id="Titulat" name="" size="26" value="">
-
-					<div id="metodosDePago">
-						<label><span id="alertTipoDeTarjeta">Tipo de tarjeta</span></label><br>
-						<label for="visa">
-						<input type="radio" id="visa" name="tarjetas" class="logoTarjetas" value="Visa">
-						<img src="" width="10px" height="10px" alt="">
-						</label>
-
-						<label for="mastercard">
-							<input type="radio" id="masterCard" name="tarjetas" class="logoTarjetas" value="MasterCard">
-							<img src="" alt="">
-						</label>
+					<!--Carrito de la compra-->
+					<div id="divTotal" class="divsNo">
+						<p><b>Carrito de la compra, si quiere hacer alguna modificacion aun esta a tiempo:</b></p>
+						<table id="tablaTotal"></table>
 					</div>
 
-					<div id="divNumeroTarjeta">
-					<label>Número tarjeta y CVC:</label><br/>
-					<input type="text" id="numeroTarjeta" value="" size="15" maxlength="16" />
-					<input type="text" id="cvcTarjeta" value="" size="2" maxlength="3" /><br/>
 
+					<!--Datos personales-->
+					<div id="divDatos" class="divsNo">
+						<p><b>Introduzca sus datos personales:</b></p>
 
-					<select id="mesTarjeta">
-						<option value="">  mes </option>
-					</select>
+							<div id="divDatosPersonales0">
+								<div id="divDatosPersonales1">
+									<label>Nombre completo:</label><br/>
+									<input type="text" id="nombre" value="" size="26" /><br/>
 
-					<select id="anioTarjeta">
-						<option value="">  año </option>
-					</select>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+<!--
+									<label>DNI:</label><br/>
+									<input type="text" id="dni" value="" size="8" maxlength="9" /><br/>
+-->
 
+									<label>Fecha de nacimiento:</label><br/>
+									<select id="fechaNacimientoDia">
+										<option value=""> dia </option>
+									</select>
+									<select id="fechaNacimientoMes">
+										<option value="">      mes</option>
+										<option value="1">Enero</option>
+										<option value="2">Febrero</option>
+										<option value="3">Marzo</option>
+										<option value="4">Abril</option>
+										<option value="5">Mayo</option>
+										<option value="6">Junio</option>
+										<option value="7">Julio</option>
+										<option value="8">Agosto</option>
+										<option value="9">Septiembre</option>
+										<option value="10">Octubre</option>
+										<option value="11">Noviembre</option>
+										<option value="12">Diciembre</option>
+									</select>
+									<select id="fechaNacimientoAnio">
+										<option value="">  año </option>
+									</select><br/>
+								</div>
 
+								<div id="divDatosPersonales2">
+									<label>Telefono movil:</label><br/>
+									<input type="text" id="movil" value="" size="8" maxlength="9"/><br/>
 
-	<!--pop-up window-->
+									<label>Email:</label><br/>
+									<input type="text" id="email1" value="" size="25" /><br/>
 
-	<div class="modal fade" id="window1">
-		<div class="modal-dialog">
-			<div class="modal-content">
-
-				<!-- Window Header-->
-				<div class="modal-header">
-					<button tyle="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title"><strong>ABRIGO</strong></h4>
-				</div>
-
-				<!-- Window Body-->
-				<div class="modal-body">
-					<p class="bg-info"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Este producto esta agotado </p>
-
-					<div class="col-md-6">
-						<img src="images/caramn2.jpg" class="img-responsive" alt="Cara-Coat">
-					</div>
-
-					<div class="col-md-6">
-						<p> Precio: $110 </p>
-						<p> Calificación: <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></p>
-						<span class="label label-default">Casual</span>
-						<span class="label label-success">Social</span>
-
-						<div id="fav">
-							<p><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>Agregar a mis favoritos</p>
-						</div>
-					</div>
-
-					<br>
-
-					<ul class="nav nav-tabs" role="tablist">
-						<li role="tablist" class=""><a href="#"></a> <ul class="nav nav-tabs" role="tablist">
-							<li role="presentation" class=""><a href="#Descripción" aria-controls="Descripción" role="tab" data-toggle="tab">Descripción</a></li>
-							<li role="presentation"><a href="#Ventas" aria-controls="Ventas" role="tab" data-toggle="tab">Ventas</a></li>
-							<li role="presentation"><a href="#Ciudades" aria-controls="Ciudades" role="tab" data-toggle="tab">Ciudades</a></li>
-							<li role="presentation"><a href="#Colores" aria-controls="Colores" role="tab" data-toggle="tab">Colores</a></li></ul>
-						</li>
-					</ul>
-					<div class="tab-content">
-						<div role="tabpanel" class="tab-pane active" id="Descripción"> <p>Prenda de vestir que baja por debajo de las caderas y se   abrocha al frente con botones y a veces también con cinturón. Se lleva además de las otras prendas de vestir para asegurarse de las inclemencias.
-
-							El abrigo se abre sobre el frente, tiene las mangas largas, y lleva a veces bolsillos e incluso, capucha. Los materiales de fabricación son variados. Pueden llevarlo tanto mujeres como hombres, aunque los cortes de abrigos de mujeres sean diferentes de los de hombres (más ajustados, más estrechos, etc.) así como los materiales (la piel suele estar reservada a las mujeres). </p>
-						</div>
-						<br>
-						<div role="tabpanel" class="tab-pane" id="Ventas">
-							<ul>
-								<li>Centro Comercial Andino</li>
-								<li>Centro Comercial Santafe</li>
-								<li>Centro Comercial Santa Barbara</li>
-							</ul>
-						</div>
-						<div role="tabpanel" class="tab-pane" id="Ciudades">
-							Puedes conseguir este abrigo en todas las ciudades del país.
-						</div>
-
-						<div role="tabpanel" class="tab-pane" id="Colores">
-							<ul>
-								<li>Negro</li>
-								<li>Blanco</li>
-								<li>Café</li>
-								<li>Morado</li>
-							</ul>
-						</div>
-
-						<br>
-
-						<div class="container-fluid">
-							<div class="row">
-								<div class="col-md-12">
-									<form class="form-horizontal">
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="ingresa tu comentario"></input>
-										</div>
-									</form>
+<!--
+									<label>Repita el email:</label><br/>
+									<input type="text" id="email2" value="" size="25" />
 								</div>
 							</div>
+
+						<div id="divDomicilio">
+							<label>Tipo de via:</label>
+							<select id="tipoDeVia">
+								<option value="Avenida">Avenida</option>
+								<option value="Calle"selected="selected">Calle</option>
+								<option value="Camino">Camino</option>
+								<option value="Carretera">Carretera</option>
+								<option value="Pasaje">Pasaje</option>
+								<option value="Plaza">Plaza</option>
+								<option value="Residencia">Residencia</option>
+								<option value="Ronda">Ronda</option>
+								<option value="Travesia">Travesia</option>
+								<option value="Urbanizacion">Urbanizacion</option>
+							</select>
+
+							<label>Nombre via:</label>
+							<input type="text" id="viaNombre" value="" size="20" /><br/>
+
+							<label>Nº/km:</label>
+							<input type="text" id="viaNumero" value="" size="2" />
+
+							<label>Bloque:</label>
+							<input type="text" id="viaBloque" value="" size="2" />
+
+							<label>Escalera:</label>
+							<input type="text" id="viaEscalera" value="" size="2" />
+
+							<label>Piso:</label>
+							<input type="text" id="viaPiso" value="" size="2" /><br/>
+
+
+							<label>Localidad:</label>
+							<input type="text" id="localidad" value="" size="13"/>
+
+							<label>Codigo Postal:</label>
+							<input type="text" id="codigoPostal" value="" size="5" maxlength="5"/>
+
+							<label>Provincia:</label>
+							<select id="provincia">
+								<option value="">          provincia</option>
+								<option value="15">A coruña</option>
+								<option value="1">Álava</option>
+								<option value="2">Albacete</option>
+								<option value="3">Alicante</option>
+								<option value="4">Almería</option>
+								<option value="33">Asturias</option>
+								<option value="5">Ávila</option>
+								<option value="6">Badajoz</option>
+								<option value="7">Baleares</option>
+								<option value="8">Barcelona</option>
+								<option value="9">Burgos</option>
+								<option value="10">Cáceres</option>
+								<option value="11">Cádiz</option>
+								<option value="39">Cantabria</option>
+								<option value="12">Castellón</option>
+								<option value="51">Ceuta</option>
+								<option value="13">Ciudad Real</option>
+								<option value="14">Córdoba</option>
+								<option value="16">Cuenca</option>
+								<option value="99">Extranjero</option>
+								<option value="17">Girona</option>
+								<option value="18">Granada</option>
+								<option value="19">Guadalajara</option>
+								<option value="20">Guipúzcoa</option>
+								<option value="21">Huelva</option>
+								<option value="22">Huesca</option>
+								<option value="23">Jaén</option>
+								<option value="26">La rioja</option>
+								<option value="35">Las palmas</option>
+								<option value="24">León</option>
+								<option value="25">Lleida</option>
+								<option value="27">Lugo</option>
+								<option value="28">Madrid</option>
+								<option value="29">Málaga</option>
+								<option value="52">Melilla</option>
+								<option value="30">Murcia</option>
+								<option value="31">Navarra</option>
+								<option value="32">Ourense</option>
+								<option value="34">Palencia</option>
+								<option value="36">Pontevedra</option>
+								<option value="37">Salamanca</option>
+								<option value="38">Santa cruz de tenerife</option>
+								<option value="40">Segovia</option>
+								<option value="41">Sevilla</option>
+								<option value="42">Soria</option>
+								<option value="43">Tarragona</option>
+								<option value="44">Teruel</option>
+								<option value="45">Toledo</option>
+								<option value="46">Valencia</option>
+								<option value="47">Valladolid</option>
+								<option value="48">Vizcaya</option>
+								<option value="49">Zamora</option>
+								<option value="50">Zaragoza</option>
+							</select>
 						</div>
 					</div>
-					<!---Footer-->
-					<footer>
-						<p><a href="#" class="btn btn-primary" role="button" data-dismiss="modal">Cerrar</a> <a href="#" class="btn btn-default" role="button"><span class="glyphicon glyphicon-shopping-cart">Comprar</a>
-						</p>
-					</footer>
+-->
+
+					<!--Datos de pago-->
+					<div id="divPago" class="divsNo">
+						<p><b>Introduzca los datos de la tarjeta de credito/debito donde se cargara el cobro:</b></p>
+
+
+						<label>Titular de la tarjeta:</label><br/>
+						<input type="text" id="titular" value="" size="26" /><br/>
+						<!--
+
+
+						<div id="metodosDePago">
+							<label><span  id="alertTipoDeTarjeta">Tipo de tarjeta:</span></label><br/>
+							<label for="visa">
+								<input type="radio" id="visa" name="tarjetas" class="logoTarjetas" value="Visa">
+								<img src="img/visa.jpg" width="10px" height="10px;"></img>
+							</label>
+
+							<label for="masterCard">
+								<input type="radio" id="masterCard" name="tarjetas" class="logoTarjetas" value="MasterCard">
+								<img src="img/mastercard.png"></img>
+							</label>
+							<label for="amex">
+								<input type="radio" id="amex" name="tarjetas" class="logoTarjetas" value="American Express">
+								<img src="img/visa.jpg"></img>
+							</label>
+
+							<label for="aurora">
+								<input type="radio" id="aurora" name="tarjetas" class="logoTarjetas" value="Aurora">
+								<img src="img/visa.jpg"></img>
+							</label>
+-->
+						</div>
+
+
+						<div id="divNumeroTarjeta">
+							<label>Número tarjeta y CVC:</label><br/>
+							<input type="text" id="numeroTarjeta" value="" size="15" maxlength="16" />
+							<input type="text" id="cvcTarjeta" value="" size="2" maxlength="3" /><br/>
+
+
+							<select id="mesTarjeta">
+								<option value="">  mes </option>
+							</select>
+
+							<select id="anioTarjeta">
+								<option value="">  año </option>
+							</select>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!--Footer-->
-</body>
+		<p class="pie">Imagen de fondo propiedad de <a href="http://www.appinformatica.com/" target="_black">appinformatica</a></p>
+	</body>
 </html>
