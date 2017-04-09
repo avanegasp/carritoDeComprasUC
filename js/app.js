@@ -1,16 +1,12 @@
 
 //	Hacer tienda online de informatica usando: HTML, CSS, JS
-//	En el codigo javascript hay que hacer la base de datos de los productos con un vector por ejemplo...
-
-
-
 
 //BASE DE DATOS
-	var productos = ["Abrigos", "Chaquetas", "Gorras", "Vestidos", "Overoles", "Camisas", "Vestidos", "Gafas de sol", "Gafas"];
+	var productos = ["Abrigos", "Chaquetas", "Gorras", "Vestidos", "Overoles", "Camisas", "Bolsos", "Gafas de sol", "Gafas"];
 	var imgGrandes = ["images/caramng15.jpg", "images/caramng8.jpg", "images/caramng14.jpg"];
 	var imgPeque = ["images/caa.jpg", "images/cach.jpg", "images/cag.jpg", "images/cama.jpg", "images/cao.jpg", "images/caracamisa.jpg", "images/cave.jpg", "images/caramng8.jpg", "images/caramng14.jpg"];
-	var precios = [33, 169, 36, 360, 11, 540, 21, 66, 25];
-	var stock = [5, 2, 8, 3, 10, 4, 3, 1, 2];
+	var precios = [33, 169, 36, 360, 11, 34, 21, 66, 25];
+	var stock = [15, 22, 18, 33, 20, 54, 23, 21, 12];
 	var precioTransporte = [6, 12, 20, "gratis"];
 	var IVA = 0.18;
 	var uniUser;
@@ -21,7 +17,7 @@
 	window.onload = function(){
 
 
-		//Se cargan los productos dentro del HTML de forna dinamica haciendo uso de los datos de la base de datos, como si de un PHP se tratase:
+		//Se cargan los productos dentro del HTML de forma dinamica haciendo uso de los datos de la base de datos:
 		var DIVS = document.getElementsByName("DIVS");
 		for (i in productos){
 			DIVS[i].innerHTML = '<a id="imgG'+i+'" href="' +imgGrandes[i]+ '"><img id="imgP'+i+'" class="imagen" src="' +imgPeque[i]+ '"></a><div class="etiquetas"><b><span id="pro'+i+'">' +productos[i]+ '</span>: <span id="pre'+i+'">' +precios[i]+ '€</span></b></div><div class="stock">Hay en stock <span id="uni'+i+'">' +stock[i]+ '</span> unidades,<br/>¿Cuantas quiere?: <input class="uniBien" type="number" id="uniUser'+i+'" name="uniUser" value="0" size="4" /></div>';
@@ -42,22 +38,10 @@
 			document.getElementById("fechaNacimientoAnio").innerHTML = document.getElementById("fechaNacimientoAnio").innerHTML + '<option value="' +i+ '">' +i+ '</option>';
 		}
 
-		//Tarjeta de credito:
-		for (var i=1;i<=12;i++){
-			document.getElementById("mesTarjeta").innerHTML = document.getElementById("mesTarjeta").innerHTML + '<option value="' +i+ '">' +i+ '</option>';
-		}
-
-		for (var i=anio;i<=(anio+21);i++){
-			document.getElementById("anioTarjeta").innerHTML = document.getElementById("anioTarjeta").innerHTML + '<option value="' +i+ '">' +i+ '</option>';
-		}
-
-
 
 		//Botones que llevaran a cabo la ejecucion de determinadas secuencias de codigo JavaScript:
 		document.getElementById("botonTotal").onclick = validaLasUnidades;
 		document.getElementById("botonDatos").onclick = pideDatos;
-/*		document.getElementById("botonPago").onclick = validaDatosPersonales;*/
-/*		document.getElementById("botonConfirmar").onclick = validaDatosPago;*/
 	}
 
 
@@ -208,8 +192,6 @@
 			document.getElementById("divDatos").className = "divsSi";
 	/**/	document.getElementById("divTotal").className = "divsNo";
 	/**/	document.getElementById("divPago").className = "divsNo";
-	/*		document.getElementById("botonPago").disabled = false;*/
-
 		}
 
 
@@ -273,7 +255,6 @@
 
 			//email:
 				var vEmail1 = document.getElementById("email1").value;
-/*				var vEmail2 = document.getElementById("email2").value; */
 
 				//email 1
 				if( !(/^\w+([-.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test(vEmail1)) ) {
@@ -283,118 +264,7 @@
 				else{
 					document.getElementById("email1").className = "textBien";
 				}
-/*
-			//Si no ha habido ni un solo error, se ejecuta la siguiente funcion que se encarga de mostrar el formulario de los datos personales:
-			if (todoBien){
-				pideDatosPago();
-			}
-			else{
-				document.getElementById("botonConfirmar").disabled = true;
-			}
-*/
 	}
 
 
-
-
-	//FUNCION DE VALIDAR DATOS y PEDIR DATOS PAGO
-		function pideDatosPago(elEvento) {
-	/**/	document.getElementById("divTotal").className = "divsNo";
-	/**/	document.getElementById("divDatos").className = "divsNo";
-			document.getElementById("divPago").className = "divsSi";
-/*			document.getElementById("botonConfirmar").disabled = false;*/
-		}
-
-
-
-
-	//FUNCION DE VALIDACION DE DATOS PAGO:
-		function validaDatosPago(elEvento) {
-
-			var todoBien = true;
-
-			//Titular de la cuenta:
-			var vTitular = document.getElementById("titular").value;
-			if( vTitular == null || vTitular.length == 0 || /^\s+$/.test(vTitular) || !isNaN(vTitular)) {
-				todoBien=false;
-				document.getElementById("titular").className = "textMal";
-			}
-			else{
-				document.getElementById("titular").className = "textBien";
-			}
-
-
-			//Tipo de tarjeta:
-			var vTarjetas = document.getElementsByName("tarjetas");
-			var seleccionado = false;
-			for(var i=0; i<vTarjetas.length; i++) {
-				if(vTarjetas[i].checked) {
-					seleccionado = true;
-					//break;
-				}
-			}
-			if(!seleccionado) {
-				todoBien=false;
-				document.getElementById("alertTipoDeTarjeta").className = "alertTipoDeTarjeta";
-			}
-			else{
-				document.getElementById("alertTipoDeTarjeta").className = "";
-			}
-
-
-			//Numero de tarjeta:
-			var vNumeroTarjeta = document.getElementById("numeroTarjeta").value;
-			if( vNumeroTarjeta.length!=16 || vNumeroTarjeta=="" || isNaN(vNumeroTarjeta) ) {
-				todoBien=false;
-				document.getElementById("numeroTarjeta").className = "textMal";
-			}
-			else{
-				document.getElementById("numeroTarjeta").className = "textBien";
-			}
-
-
-			//CVC de la tarjeta:
-			var vCvcTarjeta = document.getElementById("cvcTarjeta").value;
-			if( vCvcTarjeta.length!=3 || vCvcTarjeta=="" || isNaN(vCvcTarjeta) ) {
-				todoBien=false;
-				document.getElementById("cvcTarjeta").className = "textMal";
-			}
-			else{
-				document.getElementById("cvcTarjeta").className = "textBien";
-			}
-
-			//Fecha de tarjeta MES:
-			var vMesTarjeta = document.getElementById("mesTarjeta").selectedIndex;
-			if( vMesTarjeta == null || vMesTarjeta == 0 ) {
-				todoBien=false;
-				document.getElementById("mesTarjeta").className = "textMal";
-			}
-			else{
-				document.getElementById("mesTarjeta").className = "textBien";
-			}
-
-			//Fecha de tarjeta AÑO:
-			var vAnioTarjeta = document.getElementById("anioTarjeta").selectedIndex;
-			if( vAnioTarjeta == null || vAnioTarjeta == 0 ) {
-				todoBien=false;
-				document.getElementById("anioTarjeta").className = "textMal";
-			}
-			else{
-				document.getElementById("anioTarjeta").className = "textBien";
-			}
-
-
-			//Si no ha habido ni un solo error, se ejecuta la siguiente funcion que se encarga de enviar los datos:
-			if (todoBien){
-				validaDatosPagoYEnviaCarro();
-			}
-	}
-
-
-
-
-	//FUNCION DE VALIDAR DATOS PAGO y ENVIAR DATOS
-		function validaDatosPagoYEnviaCarro(elEvento) {
-			alert("Gracias por su compra, en 24 horas recivira su pedido\nAhora sera redirigido a la pagina de inicio.");
-			window.location.reload()
-		}
+	

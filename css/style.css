@@ -8,17 +8,32 @@
 
 * {
 	margin: 0px;
-	padding: 0px;
+	padding: 5px 5px 0px 5px;
 }
+
+/* LINKS SALIR*/
+	a.navbar-link {
+		padding: 0 20px;
+	}
+
+	div.container-fluid{
+		padding: 50px;
+	}
+
+/* Lista*/
+
+	div.col-md-3{
+		margin-top: 100px;
+	}
 
 /*CSS DE LOS PRODUCTOS*/
 	img.imagen {
 		margin-left:auto;
 		margin-right:auto;
 		display:block;
-		padding-top:5px;
-    height: 120px;
-    width: 130px;
+		padding-top:15px;
+    height: 280px;
+    width: 160px;
 	}
 
 	div.etiquetas {
@@ -28,15 +43,18 @@
 		height:22px;
 	}
 
-	div.stock {padding-left:0px;}
+	div.stock {
+		padding-left:25px;
+	}
 
 	input.uniBien {
 		position:relative;
-		margin-left:45px;
-
-
 		background:white;
+		border-radius: 6px;
+		padding: 5px;
+		margin-top: 10px;
 	}
+
 	input.uniMal {
 		margin-left:52px;
 		background:red;
@@ -59,8 +77,8 @@
 
 	#menu{
 		position:absolute;
-		top:26px;
-		left:143px;
+		top:86px;
+		left:273px;
 		width:715px;
 }
 	div.menuNo{height:775px;}
@@ -95,40 +113,45 @@
 		position:absolute;
 		top:271px;
 		left:12px;
-		width:221px;
+		width:230px;
 		height:217px;
+		margin-top: 190px;
 	}
 
 	#div5{
 		position:absolute;
 		top:271px;
 		left:246px;
-		width:221px;
+		width:230px;
 		height:217px;
+		margin-top: 190px;
 	}
 
 	#div6{
 		position:absolute;
 		top:271px;
 		left:480px;
-		width:221px;
+		width:230px;
 		height:217px;
+		margin-top: 190px;
 	}
 
 	#div7{
 		position:absolute;
 		top:504px;
 		left:12px;
-		width:221px;
+		width:230px;
 		height:217px;
+		margin-top: 380px;
 	}
 
 	#div8{
 		position:absolute;
 		top:504px;
 		left:246px;
-		width:221px;
+		width:230px;
 		height:217px;
+		margin-top: 380px;
 	}
 
 	#div9{
@@ -137,6 +160,7 @@
 		left:480px;
 		width:221px;
 		height:217px;
+		margin-top: 380px;
 	}
 
 
@@ -145,10 +169,8 @@
 	/*Div para los botones*/
 	#divbotones{
 		position:relative;
-		top:742px;
-		left:11px;
-		width:440px;
-		height:23px;
+		top:1350px;
+		left:32px;
 	}
 
 	#tablaTotal {
@@ -181,14 +203,12 @@
 	/*Divs para la zona de compras*/
 	div.divZonaCompraSi{
 		position:relative;
-		top:742px;
+		top:1380px;
+		left: 25px;
 		padding:0px 11px 20px 11px;
 		display:yes;
-		width:693px;
-		height:auto;
-
-		background:#3c8c89;
 	}
+
 	div.divZonaCompraNo{
 		position:relative;
 		top:742px;
@@ -204,8 +224,23 @@
 	#divTotal{
 		background:#378582;
 	}
+
+	#botonTotal {
+		padding: 10px;
+		border-radius: 5px;
+
+	}
+
+
+	#botonDatos {
+		padding: 10px;
+		border-radius: 5px;
+		margin-left: 20px;
+	}
+
 	#divDatos{
 		background:#378582;
+		padding:8px 0 123px 10px;
 	}
 
 	#divPago{
@@ -252,35 +287,11 @@
 	span.alertTipoDeTarjeta {color:red;}
 
 
-
-/*Metodos de pago*/
-#metodosDePago{
-	position:relative;
-	top:8px;
-	width:128px;
-	height:60px;
-}
-
-#divNumeroTarjeta{
-	position:relative;
-	top:-52px;
-	left:140px;
-	width:180px;
-	height:70px;
-}
-
-input.logoTarjetas {
-	bottom:6px;
-	position: relative;
-}
-
-
-
 /*Pie de pagina	*/
 p.pie {
 	text-align:center;
 }
 a:link {
-	color:white;
+	font-family: monospace;
 }
 Haz clic para compartir en Twitter (Se abre en una ventana nueva)Haz clic para compartir en Facebook (Se abre en una ventana nueva)Haz clic para compartir en Google+ (Se abre en una ventana nueva)

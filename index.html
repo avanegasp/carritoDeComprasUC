@@ -2,17 +2,109 @@
 <html>
 
 	<head>
-		<title>Formulario con JavaScript</title>
+		<title>Ecommerce CARA</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 		<!--lee codigo javascript-->
 		<script type="text/javascript" src="js/app.js"></script>
 
 		<!--lee codigo css-->
 		<link type="text/css" href="css/style.css" rel="stylesheet" media="screen"/>
+		<link rel="stylesheet" href="css/normalize.css">
 	</head>
 
 
 	<body>
+		<header>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<h1> CARA DELEVIGNE</h1>
+				<div class="visible-lg visible-md visible-sm">
+					<p class="navbar-text navbar-right"><a href="#" class="navbar-link">Salir</a></p>
+					<p class="navbar-text navbar-right"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span><a href="#" class="navbar-link">Compras</a></p>
+				</div>
+
+				<div class="visible-xs">
+					<div class="dropdown">
+						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							<li><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span><a href="#" class="navbar-link">Compras</a></li>
+							<li><a href="#" class="navbar-link">Salir</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div class="container">
+		<div class="col-md-3">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Busqueda" aria-describedby="basic-addon2">
+				<span class="input-group-addon" id="basic-addon2"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
+			</div>
+			<br>
+			<div class="visible-lg visible-md">
+				<h4><strong>Categorías</strong></h4>
+				<ul class="list-group">
+					<a href="#" li class="list-group-item active">
+						<span class="badge">218</span>
+						Todas </a>
+					</li>
+					<a href="#" li class="list-group-item">
+						<span class="badge">15</span>
+						Abrigos </a>
+					</li>
+					<a href="#" li class="list-group-item">
+						<span class="badge">22</span>
+						Chaquetas </a>
+					</li>
+					<a href="#" li class="list-group-item">
+						<span class="badge">18</span>
+						Gorras </a>
+					</li>
+					<a href="#" li class="list-group-item">
+						<span class="badge">33</span>
+						Vestidos </a>
+					</li>
+					<a href="#" li class="list-group-item">
+						<span class="badge">20</span>
+						Overoles </a>
+					</li>
+
+					<a href="#" li class="list-group-item">
+						<span class="badge">54</span>
+						Camisas </a>
+					</li>
+
+					<a href="#" li class="list-group-item">
+						<span class="badge">23</span>
+						Bolsos</a>
+					</li>
+
+					<a href="#" li class="list-group-item">
+						<span class="badge">21</span>
+						Gafas de sol </a>
+					</li>
+
+					<a href="#" li class="list-group-item">
+						<span class="badge">12</span>
+						Gafas </a>
+					</li>
+
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--final List-->
+
+
 		<div id="todo" class="todoNo">
 			<div id="menu" class="menuNo">
 
@@ -31,11 +123,8 @@
 
 				<!--Botones de compra-->
 				<div id="divbotones">
-					<input type="button" id="botonTotal" value="Calcular total"/>
+					<input type="button" id="botonTotal" value="Haz tu compra"/>
 					<input type="button" id="botonDatos" value="Datos personales" disabled="disabled"/>
-<!--					<input type="button" id="botonPago" value="Pago" disabled="disabled"/>
-					<input type="button" id="botonConfirmar" value="Confirmar pedido" disabled="disabled"/>
--->
 				 </div>
 
 
@@ -58,11 +147,6 @@
 								<div id="divDatosPersonales1">
 									<label>Nombre completo:</label><br/>
 									<input type="text" id="nombre" value="" size="26" /><br/>
-
-<!--
-									<label>DNI:</label><br/>
-									<input type="text" id="dni" value="" size="8" maxlength="9" /><br/>
--->
 
 									<label>Fecha de nacimiento:</label><br/>
 									<select id="fechaNacimientoDia">
@@ -95,141 +179,11 @@
 									<label>Email:</label><br/>
 									<input type="text" id="email1" value="" size="25" /><br/>
 
-<!--
-									<label>Repita el email:</label><br/>
-									<input type="text" id="email2" value="" size="25" />
-								</div>
-							</div>
-
-						<div id="divDomicilio">
-							<label>Tipo de via:</label>
-							<select id="tipoDeVia">
-								<option value="Avenida">Avenida</option>
-								<option value="Calle"selected="selected">Calle</option>
-								<option value="Camino">Camino</option>
-								<option value="Carretera">Carretera</option>
-								<option value="Pasaje">Pasaje</option>
-								<option value="Plaza">Plaza</option>
-								<option value="Residencia">Residencia</option>
-								<option value="Ronda">Ronda</option>
-								<option value="Travesia">Travesia</option>
-								<option value="Urbanizacion">Urbanizacion</option>
-							</select>
-
-							<label>Nombre via:</label>
-							<input type="text" id="viaNombre" value="" size="20" /><br/>
-
-							<label>Nº/km:</label>
-							<input type="text" id="viaNumero" value="" size="2" />
-
-							<label>Bloque:</label>
-							<input type="text" id="viaBloque" value="" size="2" />
-
-							<label>Escalera:</label>
-							<input type="text" id="viaEscalera" value="" size="2" />
-
-							<label>Piso:</label>
-							<input type="text" id="viaPiso" value="" size="2" /><br/>
-
-
-							<label>Localidad:</label>
-							<input type="text" id="localidad" value="" size="13"/>
-
-							<label>Codigo Postal:</label>
-							<input type="text" id="codigoPostal" value="" size="5" maxlength="5"/>
-
-							<label>Provincia:</label>
-							<select id="provincia">
-								<option value="">          provincia</option>
-								<option value="15">A coruña</option>
-								<option value="1">Álava</option>
-								<option value="2">Albacete</option>
-								<option value="3">Alicante</option>
-								<option value="4">Almería</option>
-								<option value="33">Asturias</option>
-								<option value="5">Ávila</option>
-								<option value="6">Badajoz</option>
-								<option value="7">Baleares</option>
-								<option value="8">Barcelona</option>
-								<option value="9">Burgos</option>
-								<option value="10">Cáceres</option>
-								<option value="11">Cádiz</option>
-								<option value="39">Cantabria</option>
-								<option value="12">Castellón</option>
-								<option value="51">Ceuta</option>
-								<option value="13">Ciudad Real</option>
-								<option value="14">Córdoba</option>
-								<option value="16">Cuenca</option>
-								<option value="99">Extranjero</option>
-								<option value="17">Girona</option>
-								<option value="18">Granada</option>
-								<option value="19">Guadalajara</option>
-								<option value="20">Guipúzcoa</option>
-								<option value="21">Huelva</option>
-								<option value="22">Huesca</option>
-								<option value="23">Jaén</option>
-								<option value="26">La rioja</option>
-								<option value="35">Las palmas</option>
-								<option value="24">León</option>
-								<option value="25">Lleida</option>
-								<option value="27">Lugo</option>
-								<option value="28">Madrid</option>
-								<option value="29">Málaga</option>
-								<option value="52">Melilla</option>
-								<option value="30">Murcia</option>
-								<option value="31">Navarra</option>
-								<option value="32">Ourense</option>
-								<option value="34">Palencia</option>
-								<option value="36">Pontevedra</option>
-								<option value="37">Salamanca</option>
-								<option value="38">Santa cruz de tenerife</option>
-								<option value="40">Segovia</option>
-								<option value="41">Sevilla</option>
-								<option value="42">Soria</option>
-								<option value="43">Tarragona</option>
-								<option value="44">Teruel</option>
-								<option value="45">Toledo</option>
-								<option value="46">Valencia</option>
-								<option value="47">Valladolid</option>
-								<option value="48">Vizcaya</option>
-								<option value="49">Zamora</option>
-								<option value="50">Zaragoza</option>
-							</select>
-						</div>
-					</div>
--->
-
 					<!--Datos de pago-->
 					<div id="divPago" class="divsNo">
 						<p><b>Introduzca los datos de la tarjeta de credito/debito donde se cargara el cobro:</b></p>
-
-
 						<label>Titular de la tarjeta:</label><br/>
 						<input type="text" id="titular" value="" size="26" /><br/>
-						<!--
-
-
-						<div id="metodosDePago">
-							<label><span  id="alertTipoDeTarjeta">Tipo de tarjeta:</span></label><br/>
-							<label for="visa">
-								<input type="radio" id="visa" name="tarjetas" class="logoTarjetas" value="Visa">
-								<img src="img/visa.jpg" width="10px" height="10px;"></img>
-							</label>
-
-							<label for="masterCard">
-								<input type="radio" id="masterCard" name="tarjetas" class="logoTarjetas" value="MasterCard">
-								<img src="img/mastercard.png"></img>
-							</label>
-							<label for="amex">
-								<input type="radio" id="amex" name="tarjetas" class="logoTarjetas" value="American Express">
-								<img src="img/visa.jpg"></img>
-							</label>
-
-							<label for="aurora">
-								<input type="radio" id="aurora" name="tarjetas" class="logoTarjetas" value="Aurora">
-								<img src="img/visa.jpg"></img>
-							</label>
--->
 						</div>
 
 
@@ -251,6 +205,5 @@
 				</div>
 			</div>
 		</div>
-		<p class="pie">Imagen de fondo propiedad de <a href="http://www.appinformatica.com/" target="_black">appinformatica</a></p>
 	</body>
 </html>
