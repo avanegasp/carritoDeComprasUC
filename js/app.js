@@ -4,7 +4,7 @@
 //BASE DE DATOS
 	var productos = ["Abrigos", "Chaquetas", "Gorras", "Vestidos", "Overoles", "Camisas", "Bolsos", "Gafas de sol", "Gafas"];
 	var imgGrandes = ["images/caramng15.jpg", "images/caramng8.jpg", "images/caramng14.jpg"];
-	var imgPeque = ["images/caa.jpg", "images/cach.jpg", "images/cag.jpg", "images/cama.jpg", "images/cao.jpg", "images/caracamisa.jpg", "images/cave.jpg", "images/caramng8.jpg", "images/caramng14.jpg"];
+	var imgPeque = ["images/caa.jpg", "images/cach.jpg", "images/cag.jpg", "images/cama.jpg", "images/cao.jpg", "images/caracamisa.jpg", "images/cave.jpg", "images/caramng8.jpg", "images/caragafas.jpg"];
 	var precios = [33, 169, 36, 360, 11, 34, 21, 66, 25];
 	var stock = [15, 22, 18, 33, 20, 54, 23, 21, 12];
 	var precioTransporte = [6, 12, 20, "gratis"];
@@ -265,6 +265,3 @@
 					document.getElementById("email1").className = "textBien";
 				}
 	}
-
-
-	
