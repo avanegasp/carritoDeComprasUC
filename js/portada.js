@@ -28,6 +28,30 @@
 				return true;
 			};
 
+			var validarRadios = function(){
+				var opciones = document.getElementsByName("sexo"),
+					resultado = false;
+
+					for(var i = 0; i< elementos.length; i++){
+						if (elementos[i].type == "radio" && elementos[i].name == "sexo"){
+							for (var o = 0; o < opciones; o++){
+								if(opciones[o].checked){
+									resultado = true;
+									break;
+								}
+							}
+							if (resultado == false){
+								elementos[i].parentNode.className = elementos[i].parentNode.className + " error";
+								console.log("el campo sexo esta incompleto");
+								return false;
+							} else {
+								elementos[i].parentNode.className = elementos[i].parentNode.replace(" error", "")
+									return true;
+							}
+						}
+					}
+
+			}
 
 			var enviar = function(e){
 				if(!validarInputs()){
