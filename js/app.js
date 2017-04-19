@@ -1,6 +1,3 @@
-
-//	Hacer tienda online de informatica usando: HTML, CSS, JS
-
 //BASE DE DATOS
 	var productos = ["Abrigos", "Chaquetas", "Gorras", "Vestidos", "Overoles", "Camisas", "Bolsos", "Gafas de sol", "Gafas"];
 	var imgGrandes = ["images/caramng15.jpg", "images/caramng8.jpg", "images/caramng14.jpg"];
@@ -24,8 +21,7 @@
 		}
 
 
-		//Rellena el campo dia y año, de la fecha de nacimiento y tarjeta de credito:
-		//Mas info en: http://www.tallerwebmaster.com/tutorial/mostrar-fecha-actual-con-javascrip/58/
+		//Rellena el campo dia y año, de la fecha de nacimiento:
 		//Fecha de nacimiento
 		var fecha = new Date();
 		var anio = fecha.getFullYear();
@@ -44,13 +40,7 @@
 		document.getElementById("botonDatos").onclick = pideDatos;
 	}
 
-
-
-
 	/*-------------------COMIENZAN LAS FUNCIONES-------------------*/
-
-
-
 
 //FUNCION DE VALIDACION DE UNIDADES:
 	function validaLasUnidades(elEvento) {
@@ -71,13 +61,12 @@
 				document.getElementById("menu").className = "menuNo";
 				document.getElementById("divZonaCompra").className = "divZonaCompraNo";
 				document.getElementById("divTotal").className = "divsNo";
-/**/			document.getElementById("divDatos").className = "divsNo";
-/**/			document.getElementById("divPago").className = "divsNo";
+				document.getElementById("divDatos").className = "divsNo";
 
 				//Deshabilita el boton de datos personales:
 				document.getElementById("botonDatos").disabled = true;
-/**/			document.getElementById("botonDatos").disabled = true;
-/**/			document.getElementById("botonDatos").disabled = true;
+				document.getElementById("botonDatos").disabled = true;
+				document.getElementById("botonDatos").disabled = true;
 
 				//Con solo un error se para la validacion de unidades:
 				return;
@@ -129,8 +118,7 @@
 					document.getElementById("menu").className = "menuSi";
 					document.getElementById("divZonaCompra").className = "divZonaCompraSi";
 					document.getElementById("divTotal").className = "divsSi";
-	/**/			document.getElementById("divDatos").className = "divsNo";
-	/**/			document.getElementById("divPago").className = "divsNo";
+					document.getElementById("divDatos").className = "divsNo";
 
 					//Habilita el boton de datos personales
 					document.getElementById("botonDatos").disabled = false;
@@ -185,16 +173,11 @@
 		}
 
 
-
-
 	//FUNCION DE PEDIR DATOS
 		function pideDatos(elEvento) {
-			document.getElementById("divDatos").className = "divsSi";
-	/**/	document.getElementById("divTotal").className = "divsNo";
-	/**/	document.getElementById("divPago").className = "divsNo";
+		document.getElementById("divDatos").className = "divsSi";
+		document.getElementById("divTotal").className = "divsNo";
 		}
-
-
 
 
 	//FUNCION DE VALIDACION DE DATOS PERSONALES:

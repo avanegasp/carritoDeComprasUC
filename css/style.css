@@ -1,16 +1,15 @@
-/*Fichero de estilos para pantallas de ordenador*/
-	body {
-		background: white;
-		color:black;
-		font-size:14px;
-		font-family:comic sans ms;
-	}
 
 * {
 	margin: 0px;
 	padding: 5px 5px 0px 5px;
 }
 
+body {
+	background: white;
+	color:black;
+	font-size:14px;
+	font-family:comic sans ms;
+}
 /* LINKS SALIR*/
 	a.navbar-link {
 		padding: 0 20px;
@@ -20,6 +19,9 @@
 		padding: 50px;
 	}
 
+	.list-group li {
+		list-style: none;
+	}
 /* Lista*/
 
 	div.col-md-3{
@@ -163,14 +165,13 @@
 		margin-top: 380px;
 	}
 
-
-
 /*CSS DEL CARRITO DE LA COMPRA*/
 	/*Div para los botones*/
 	#divbotones{
 		position:relative;
 		top:1350px;
 		left:32px;
+		margin-bottom: 170px;
 	}
 
 	#tablaTotal {
@@ -228,9 +229,7 @@
 	#botonTotal {
 		padding: 10px;
 		border-radius: 5px;
-
 	}
-
 
 	#botonDatos {
 		padding: 10px;
@@ -240,7 +239,7 @@
 
 	#divDatos{
 		background:#378582;
-		padding:8px 0 123px 10px;
+		padding:8px 0 30px 10px;
 	}
 
 	#divPago{
@@ -274,10 +273,6 @@
 	#divDomicilio{
 		padding:0px 0px 0px 10px;
 	}
-
-
-
-
 
 /*CSS VALIDACION*/
 	input.textBien {background:#d1fbe1;}
